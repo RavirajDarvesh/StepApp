@@ -1,0 +1,226 @@
+
+/*=====================================================
+    Homepage_custom css
+======================================================*/
+.bg_light{
+    background: #ffffff !important;
+}
+.color_light{
+    color: #ffffff !important;
+}
+.color_dark{
+    color: #757575 !important;
+}
+.bg_dark{
+   background:#757575 !important;
+}
+.bg_light_dark{
+    background: #f1f1f1;
+}
+.color_theme{
+    color: #7bb932;
+}
+.bg_theme{
+    background: #7bb932;
+}
+.color_gray_text{
+    color: #3a3a3a;
+}
+.font_small{
+    font-size: 14px;
+}
+.font_medium{
+    font-size: 16px;
+}
+.border_none{
+    border: 0 !important;
+}
+.blank_div{
+    min-height: 30px;
+}
+.logo{
+    margin: 0 !important;
+}
+.background_svg{
+    background: url('../images/Homepage_Assets/background_image.png');
+    z-index: -10;
+}
+
+/* Navigation */
+.navigation .navbar .navbar-nav li{
+    margin: 0 10px !important;
+}
+.navigation .navbar .navbar-nav li a{
+    padding: 5px 0 !important;
+    margin: 15px 0 !important;
+    transition: none !important;
+    border-bottom: 3px solid transparent;
+}
+.navigation .navbar .navbar-nav > li > a.active,
+.navigation .navbar .navbar-nav > li > a:hover{
+    border-bottom: 3px solid #ffe400;
+    color: #07294d !important;
+}
+.support-button .support{
+    padding: 0 !important;
+}
+
+
+/* Banner */
+.banner_baloon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+/* benifits_section */
+.benifits_section h5{
+    font-size: 16px;
+}
+.benifits_section p{
+    font-size: 14px;
+}
+.benifits_section{
+    margin: 50px;
+}
+.circle_text{
+    background: url('../images/Homepage_Assets/circle_bg.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #3a3a3a;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: -40px;
+    z-index: 10;
+}
+.callout{
+    position: relative;
+}
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+.callout.bottom-Right::before {
+    right: 0;
+    bottom: -70px;
+    border-top: 85px solid #f1f1f1;
+}
+
+.callout.bottom-Left::before {
+	left: 0;
+	bottom: -70px;
+	border-top: 85px solid #f1f1f1;
+}
+
+ .callout.left::before {
+	right: -75px;
+	top: 40%;
+	border-left: 80px solid #f1f1f1;
+}
+
+.callout.right::before {
+	left: -85px;
+    top: 40%;
+	border-right: 80px solid #f1f1f1;
+}
+
+
+.callout.top-left::before {
+	left: 0px;
+	top: -50px;
+    border-bottom: 41px solid #f1f1f1;
+}
+
+.callout.top-right::before {
+    right: 0px;
+    top: -68px;
+    border-bottom: 58px solid #f1f1f1;
+}
+
+/* benifit_mobile section */
+.benifit_mobile_icons_parent{
+    position: relative;
+}
+.benifit_mobile_icons{
+    position: absolute;
+    left: -50px;
+    top: 10%;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Play learn section */
+.play_learn_section{
+    position: relative;
+    /* margin: 150px 0; */
+}
+
+
+/* download section */
+.download{
+    margin: 100px 0;
+    position: relative;
+    padding: 100px 0;
+}
+.download_image{
+    position: absolute;
+    bottom: -100px;
+    width: 80%;
+}
+
+/* Flow Mobile section */
+.map_parent{
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 30px 15px 15px;
+}
+.map_head{
+    position: absolute;
+    top: -19px;
+    background: #7bb932;
+    color: #ffffff;
+    padding: 5px 20px;
+    left: 38%;
+}
+.arrow{
+    width: 20px;
+}
+
+
+@media only screen and (min-width: 992px){
+
+}
+@media only screen and (min-width: 1024px){
+
+    .banner_baloon{
+        top: -1px;
+        width: 50%;
+    }
+
+    .play_learn_image{
+        position: absolute;
+        left: -2px;
+        top: -100px;
+        width: 45%;
+    }
+
+    
+}
+@media only screen and (min-width: 1440px){
+    .banner_baloon{
+        top: -250px;
+        width: 50%;
+    }
+    .play_learn_image{
+        width: 35%;
+    }
+}
